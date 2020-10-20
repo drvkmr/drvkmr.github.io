@@ -23,7 +23,7 @@ var data1 = {
   "green" : 100,
   "blue" : 100,
   "brightness" : 0,
-  "brightness" : 50
+  "contrast" : 50
 };
 
 const data2 = require("./index.js");
