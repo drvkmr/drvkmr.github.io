@@ -150,6 +150,10 @@
         <input type="range" min="1" max="100" value="50" class="slider" id="brightness">
         <p>brightness: <span id="brightness_val"></span></p>
       </div>
+      <div class="slidecontainer">
+        <input type="range" min="-255" max="255" value="0" class="slider" id="contrast">
+        <p>contrast: <span id="contrast_val"></span></p>
+      </div>
       
     </div>
     <footer>
@@ -236,6 +240,7 @@
    obj.green = rgb[1];
    obj.blue = rgb[2];
    obj.brightness = parseInt(slider_brightness.value);
+   obj.contrast = parseInt(slider_contrast.value);
    var jsonString= JSON.stringify(obj);
    balenaBLE.writeJson(jsonString);
   }
@@ -253,6 +258,8 @@
       	output_scale.innerHTML = data["scale"].toString();
       	slider_brightness.value = data["brightness"].toString();
       	output_brightness.innerHTML = data["brightness"].toString();
+      	slider_contrast.value = data["contrast"].toString();
+      	output_contrast.innerHTML = data["contrast"].toString();
       	colour_picker.value = rgbToHex(data["red"],data["green"],data["blue"]);
       	output_colour.innerHTML = colour_picker.value;
 	} catch (error) {
@@ -292,6 +299,14 @@
   // Update the current slider value (each time you drag the slider handle)
   slider_brightness.oninput = function() {
     output_brightness.innerHTML = this.value;
+    sendJson();
+  }
+  var slider_contrast = document.getElementById("contrast");
+  var output_contrast = document.getElementById("contrast_val");
+  output_contrast.innerHTML = slider_contrast.value; // Display the default slider value
+  // Update the current slider value (each time you drag the slider handle)
+  slider_contrast.oninput = function() {
+    output_contrast.innerHTML = this.value;
     sendJson();
   }
   /*

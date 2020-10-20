@@ -13,8 +13,8 @@ function decode(buf) {
 const PORT=8080; 
 var buf = new Buffer("aaa");
 var str = decode(buf);//buf.toString();
-console.log(buf);
-console.log(str);
+// console.log(buf);
+// console.log(str);
 
 var data1 = {
   "speed" : 1,
@@ -22,19 +22,20 @@ var data1 = {
   "red" : 100,
   "green" : 100,
   "blue" : 100,
+  "brightness" : 0,
   "brightness" : 50
 };
 
 const data2 = require("./index.js");
 data2["data"] = data1;
 const data = require("./index.js");
-console.log(data["path"]);
+// console.log(data["path"]);
 
 var json_data = JSON.stringify(data["data"]);
 	fs.writeFileSync('./data/data.json', json_data)
 var buf =  new Buffer(json_data);      
-console.log(json_data);
-console.log(buf);
+// console.log(json_data);
+// console.log(buf);
 
 fs.readFile('./index.html', function (err, html) {
 

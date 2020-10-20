@@ -14,7 +14,8 @@ var data = {
   "red" : 100,
   "green" : 100,
   "blue" : 100,
-  "brightness" : 50
+  "brightness" : 0,
+  "contrast" : 50
 };
 
 		
@@ -28,7 +29,7 @@ fs.access(path, fs.F_OK, (err) => {
 	//file exists
 	data = fs.readFileSync(path);
 	data = JSON.parse(data);
-	console.log(data);
+	// console.log(data);
 });
 
 
