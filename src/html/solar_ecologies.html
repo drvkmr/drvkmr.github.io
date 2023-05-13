@@ -1,0 +1,107 @@
+{% set page_title = 'Solar Ecologies' %}
+{% set navbar_dark = true %}
+{% set navbar_fixed = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile_dark = true %}
+{% set footer = 'default-2' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative lines-style-3">
+    <div class="line text-white"></div>
+
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="assets/images/projects/SEC4.jpg" class="jarallax-img" alt="">
+        </div>
+
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+
+    <div class="container text-center">
+        <h1 class="display-4 text-white show-on-scroll" data-show-duration="1000">Solar Ecologies</h1>
+
+        <div class="row align-items-center gh-1 d-inline-flex">
+            <div class="col-auto show-on-scroll" data-show-delay="200" data-show-duration="500" data-show-distance="20" data-show-origin="left">
+                <a href="https://vimeo.com/305801519" data-fancybox class="btn btn-white btn-circle btn-md">
+                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L12 7.5L0 15V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="col-auto show-on-scroll" data-show-delay="400" data-show-distance="20" data-show-duration="500" data-show-origin="right">
+                <a href="https://vimeo.com/305801519" data-fancybox class="btn-link btn-white text-decoration-none">view project video</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-160 shape-parent overflow-hidden">
+    <div class="shape mt-n160 justify-content-end">
+        <svg data-rellax-speed="-1" class="mt-n160" width="498" height="641" viewBox="0 0 498 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5"/>
+        </svg>
+    </div>
+
+    <div class="py-160 my-n10">
+        <div class="row gh-1 gv-5 justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left">
+                <div class="subtitle">about project</div>
+                <h1 class="h3 mb-60">Rapid Kinetic Toolkit</h1>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="200">
+                <p class="lead mb-30 fw-normal">‘Rapid Kinetic’ is an educational toolkit for prototyping lightweight dynamic structures. It consists of custom 3d printed modular snap-fit joints, DIY pneumatic artificial muscles, and a custom pneumatic control and simulation system.</p>
+                <p class="mb-0">To showcase the potentials of the kit, ‘Solar Ecologies’, a site-specific sculpture, explores the relationship between solar energy and the Hackney River lee canals. Inspired by the biological behavior of plants and flower petal movements and their ability to adapt to light in different lighting conditions, three structures harness solar power from the sun during the day, and at night act as beacons of light along the canal. The structure is entirely constructed using the Rapid Kinetic kit of parts, Rapid Kinetic pneumatic muscles, aluminum beams and lightweight minimal tensile surface.</p>
+                <hr>
+                <div class="row gh-2 gv-3">
+                    <div class="col-auto col-sm-6">
+                        <ul class="list-group list-group-gap borderless">
+                            <li class="list-group-item"><span class="fw-medium me-8">Date:</span> October 2018</li>
+                            <li class="list-group-item"><span class="fw-medium me-8">Category:</span> Installation</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto col-sm-6">
+                        <ul class="list-group list-group-gap borderless">
+                            <li class="list-group-item"><span class="fw-medium me-8">Team:</span> Dhruv Kumar, Enrico Cacciapuoti and Minerva Zhang</li>
+                            <li class="list-group-item">Designed and executed at University College London</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+    <img src="{{ src[0] }}" alt="">
+</a>
+{% endmacro %}
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio.solar_ecologies.image[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+<div class="pb-160">
+    <div class="container">
+        <div class="row gh-1 gv-1">
+            <div class="col-12 show-on-scroll" data-show-duration="500">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/306599804?h=012c95b17f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="col-12 show-on-scroll" data-show-duration="500">
+                {{ image_portfolio_init('01', 'gallery-item-sm') }}
+            </div>
+            <div class="col-12 col-md-6 show-on-scroll" data-show-delay="150" data-show-duration="500">
+                {{ image_portfolio_init('02', 'gallery-item-md') }}
+            </div>
+            <div class="col-12 col-md-6 show-on-scroll" data-show-delay="300" data-show-duration="500">
+                {{ image_portfolio_init('03', 'gallery-item-md') }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

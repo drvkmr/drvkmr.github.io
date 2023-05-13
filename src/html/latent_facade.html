@@ -1,0 +1,109 @@
+{% set page_title = 'Latent Facade' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src[1] }}" class="gallery-item text-white{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+    <img src="{{ src[0] }}" alt="">
+    <span class="background-color" style="background-color: rgba(14, 14, 14, .2);"></span>
+    <span class="gallery-item-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2.5V0H1.25C0.559609 0 0 0.559609 0 1.25V10H2.5V4.2625L14.1125 15.875L15.875 14.1125L4.2625 2.5H10Z" fill="currentColor"/>
+            <path d="M38.75 0H30V2.5H35.7375L24.125 14.1125L25.8875 15.875L37.5 4.2625V10H40V1.25C40 0.559609 39.4404 0 38.75 0Z" fill="currentColor"/>
+            <path d="M37.5 35.7375L25.8875 24.125L24.125 25.8875L35.7375 37.5H30V40H38.75C39.4404 40 40 39.4404 40 38.75V30H37.5V35.7375Z" fill="currentColor"/>
+            <path d="M14.1125 24.1125L2.5 35.7375V30H0V38.75C0 39.4404 0.559609 40 1.25 40H10V37.5H4.2625L15.875 25.8875L14.1125 24.1125Z" fill="currentColor"/>
+        </svg>
+    </span>
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio.latent_facade.image[name], classes=classes, gallery=gallery) }}
+    <!-- {{ image_portfolio(single_portfolio_images.style_6[name], classes=classes, gallery=gallery) }} -->
+{% endmacro %}
+
+{% block content %}
+<div class="container mt-n10">
+    <div class="pt-60 pb-130 mt-30 mb-n10 text-center">
+        <h1 class="mb-n7 show-on-scroll" data-show-duration="700" data-show-distance="10">Latent Facade</h1>
+    </div>
+
+    <div class="swiper mb-160 show-on-scroll" data-swiper-autoplay="4000" data-swiper-slides="1" data-swiper-speed="600" data-swiper-loop="true" data-swiper-parallax="true" data-show-duration="700" data-show-delay="200">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="assets/images/projects/SCD1.jpeg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
+                            <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/SCD1.jpeg" alt="" >
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets/images/projects/SCD2.jpeg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
+                            <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/SCD2.jpeg" alt="" >
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets/images/projects/SCD3.jpeg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
+                            <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/SCD3.jpeg" alt="" >
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets/images/projects/SCD4.jpeg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
+                            <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/SCD4.jpeg" alt="" >
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets/images/projects/SCD5.jpeg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
+                            <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/SCD5.jpeg" alt="" >
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="swiper-button-prev bg-white">
+            {{- icon.arrow_left | safe -}}
+        </div>
+        <div class="swiper-button-next bg-white">
+            {{- icon.arrow_right | safe -}}
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center mb-130">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h3 mb-30 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
+            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Inspired by the pioneering research undertaken on the Cambridge Science Park, Latent Façade is an exploration of image capture and computer vision.</p>
+            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">During the day, two motion detection cameras become the artwork’s “eyes” observing pedestrian and vehicular movements which are then recounted in real-time as animated patterns of light. At night, or during quiet spells, the artwork closes its eyes and ‘dreams’.</p>
+            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"> Latent Façade finds beauty in the mundane. By interpreting everyday actions as unpredictable, performative patterns it explores how art can transform the built environment into a dynamic ever-changing spectacle. </p>
+        </div>
+        <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+            <hr class="mt-0 mb-30">
+            <div class="row justify-content-around gh-1">
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Team:</span> Ben Mahler, Dhruv Kumar, James Fox, Jon Sly, Richard Broom at Jason Bruges Studio
+                </div>
+            </div>
+            <div class="row justify-content-around gh-1">
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Date:</span> October 2021
+                </div>
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Category:</span> Lighting
+                </div>
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Client:</span> Camridge Science Park
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/566021608?h=78dbc027e6&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/566021608">Latent Facade</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <div class="mt-160"></div>
+</div>
+{% endblock %}
