@@ -51,6 +51,9 @@
                 },
                 "mobile_shelter.html": {
                     "name": "Mobile Shelter"
+                },
+                "pree_wallet.html": {
+                    "name": "Pree Wallet"
                 }
             }
         },
@@ -395,6 +398,39 @@
                     "assets/images/projects/MobileShelter/16.jpg",
                     "assets/images/projects/MobileShelter/16.jpg"
                 ]   
+            }
+        },
+        "pree_wallet": {
+            "href": "pree_wallet.html",
+            "title": "Pree Wallet",
+            "category": ["product", "IoT", "#"],
+            "image": {
+                "lg": "assets/images/projects/preewallet/6.jpg",
+                "md": "assets/images/projects/preewallet/6.jpg",
+                "01": [
+                    "assets/images/projects/preewallet/1.gif",
+                    "assets/images/projects/preewallet/1.gif"
+                ],
+                "02": [
+                    "assets/images/projects/preewallet/2.gif",
+                    "assets/images/projects/preewallet/2.gif"
+                ],
+                "03": [
+                    "assets/images/projects/preewallet/3.gif",
+                    "assets/images/projects/preewallet/3.gif"
+                ],
+                "04": [
+                    "assets/images/projects/preewallet/4.gif",
+                    "assets/images/projects/preewallet/4.gif"
+                ],
+                "05": [
+                    "assets/images/projects/preewallet/5.gif",
+                    "assets/images/projects/preewallet/5.gif"
+                ],
+                "06": [
+                    "assets/images/projects/preewallet/6.jpg",
+                    "assets/images/projects/preewallet/6.jpg"
+                ]
             }
         }
     }
