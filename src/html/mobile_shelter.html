@@ -1,0 +1,160 @@
+{% set page_title = 'Mobile Shelter' %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_fixed = true %}
+{% set navbar_expand = true %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<div class="p-2">
+    <a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+        <img src="{{ src[0] }}" alt="" class="w-100" style="object-fit: contain; object-position: center;">
+    </a>
+</div>
+{% endmacro %}
+
+{% macro image_portfolio_simple(src="", classes="") %}
+<div class="p-2">
+    <img src="{{ src }}" alt="" class="w-100" style="object-fit: contain; object-position: center;">
+</div>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio.mobile_shelter.image[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+{% macro image_mobile_shelter(name="", classes="") %}
+    {{ image_portfolio_simple('assets/images/projects/MobileShelter/' + name + '.jpg', classes=classes) }}
+{% endmacro %}
+
+{% block content %}
+
+<div class="pt-160 pb-130">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="mt-10 mb-30 pb-3 show-on-scroll" data-show-duration="500" data-show-distance="10">Mobile Shelter</h1>
+                <p class="mb-n8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">A concept project to explore the possibility of a completely nomad and independent lifestyle.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- First set of images -->
+<div class="py-80">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 show-on-scroll" data-show-duration="500" data-show-delay="50">
+                {{ image_mobile_shelter('14') }}
+            </div>
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
+                {{ image_mobile_shelter('3') }}
+            </div>
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="150">
+                {{ image_mobile_shelter('6') }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Details Section -->
+<div class="py-160 bg-light">
+    <div class="container">
+        <div class="row gh-5 gv-3 justify-content-center">
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <h2 class="h3 mb-12">Project Details</h2>
+                    </div>
+                    <div class="col-lg-auto d-none d-lg-block"><hr class="mt-25 mb-0 width-70px"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
+                <h4 class="mb-25">Date</h4>
+                <p class="mb-n10">September 2017</p>
+            </div>
+            <div class="col-12 col-lg-5 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="250">
+                <h4 class="md-25">Category</h4>
+                <p class="mb-n10">Architecture, Product</p>
+            </div>
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="350">
+                <h4 class="mb-25">Description</h4>
+                <p class="mb-0">An ambitious concept project to explore the design of a completely mobile and independent living space. The shelter integrates sustainable systems, efficient architecture, and mobility solutions to create a self-sufficient lifestyle for modern nomads. The design focuses on minimal environmental impact while maximizing functionality and comfort.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second set of images -->
+<div class="py-80">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
+                {{ image_mobile_shelter('1') }}
+            </div>
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
+                {{ image_mobile_shelter('9') }}
+            </div>
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="150">
+                {{ image_mobile_shelter('11') }}
+            </div>
+            <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="250">
+                {{ image_mobile_shelter('12') }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Section -->
+<div class="pt-160 shape-parent overflow-hidden">
+    <div class="shape mt-n160 justify-content-end">
+        <svg data-rellax-speed="-1" class="mt-n160" width="498" height="641" viewBox="0 0 498 641" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(0px, 35px, 0px);">
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5"></circle>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="row gh-1 gv-3 align-items-center">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+
+            <div class="col-12 col-lg-5 show-on-scroll" data-show-delay="250" data-show-distance="20" data-show-duration="500" data-show-origin="left">
+                <div class="position-relative">
+                    {{ image_mobile_shelter('15') }}
+                </div>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block"></div>
+
+            <div class="col-12 col-lg-4 ms-lg-n30 show-on-scroll" data-show-delay="50" data-show-distance="20" data-show-duration="500" data-show-origin="right">
+                <p class="subtitle mb-25">the outcome</p>
+                <h3 class="mt-n2 mb-60">Almost a startup</h3>
+                <p class="mb-40">A large engineering company loved the idea and we collaborated to build a few prototypes. However some internal conflicts made it impossible to progress.</p>
+
+                <div class="row align-items-center gh-1 d-inline-flex mt-n10">
+                    <div class="col-auto">
+                        <a href="https://youtu.be/HvD58oL_oT8?si=OOFw8al4SxKVZHAi" data-fancybox="" class="btn btn-dark btn-circle btn-md">
+                            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L12 7.5L0 15V0Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://youtu.be/HvD58oL_oT8?si=OOFw8al4SxKVZHAi" data-fancybox="" class="btn-link btn-dark text-decoration-none">watch video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-navigation mt-160">
+            <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+            <a href="services.html" class="btn btn-light btn-circle btn-xs">all</a>
+            <a href="#" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
