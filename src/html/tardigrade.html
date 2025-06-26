@@ -36,30 +36,20 @@
     <div class="swiper mb-160 show-on-scroll" data-swiper-slides="1" data-swiper-speed="600" data-swiper-loop="true" data-swiper-parallax="true" data-show-duration="700" data-show-delay="200">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="assets/images/projects/TAR1.jpg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
-                        <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/TAR1.jpg" alt="" >
-                    </a>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('02', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
-                <div class="swiper-slide">
-                    <a href="assets/images/projects/TAR1e.jpg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
-                        <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/TAR1e.jpg" alt="" >
-                    </a>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('10', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
-                <div class="swiper-slide">
-                    <a href="assets/images/projects/TAR1b.jpg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
-                        <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/TAR1b.jpg" alt="" >
-                    </a>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('07', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
-                <div class="swiper-slide">
-                    <a href="assets/images/projects/TAR1d.jpg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
-                        <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/TAR1d.jpg" alt="" >
-                    </a>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('03', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
-                <div class="swiper-slide">
-                    <a href="assets/images/projects/TAR1c.jpg" class="gallery-item gallery-item-md" data-fancybox="gallery-slider" data-animation-effect="fade">
-                        <img data-swiper-parallax-x="20%" class="swiper-image" src="assets/images/projects/TAR1c.jpg" alt="" >
-                    </a>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('12', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
             </div>
         </div>
@@ -75,7 +65,7 @@
         <div class="col-12 col-lg-7 text-center">
             <h2 class="h3 mb-30 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
             <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Tardigrade is a continuos cruiser narrowboat living in London canals. She was built in 1980 and is being renovated by us since 2021.</p>
-            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Full interior and electrical refurbishment to make it more beautiful, livable and smart.</p>
+            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Full interior and electrical refurbishment to make it more beautiful, livable and smart. Lots of small little sensors, custom made lighting setup, everything connected !</p>
         </div>
         <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
             <hr class="mt-0 mb-30">
@@ -93,12 +83,39 @@
     <p>A cruise from Paddington to King's Cross in London</p>
 
     <div class="row gh-1 gv-1">
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10">{{ image_portfolio_init('01', 'gallery-item-lg', 'gallery') }}</div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('02', 'gallery-item-lg', 'gallery') }}</div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">{{ image_portfolio_init('03', 'gallery-item-lg', 'gallery') }}</div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">{{ image_portfolio_init('04', 'gallery-item-lg', 'gallery') }}</div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">{{ image_portfolio_init('05', 'gallery-item-lg', 'gallery') }}</div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">{{ image_portfolio_init('06', 'gallery-item-lg', 'gallery') }}</div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10">
+            {{ image_portfolio_init('05', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">Custom lighting controller</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">
+            {{ image_portfolio_init('06', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">Sliders to control lights depending on battery and mood.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+            {{ image_portfolio_init('09', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">Pee Alarm :)</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
+            {{ image_portfolio_init('04', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">Unique Tunnel Lighting Setup</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
+            {{ image_portfolio_init('16', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">Tiling is so hard</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
+            {{ image_portfolio_init('15', 'gallery-item-lg', 'gallery') }}
+            <p class="text-center mt-2">It was a lot of work !</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
+            {{ image_portfolio_init('11', 'gallery-item-lg', 'gallery') }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="250">
+            {{ image_portfolio_init('17', 'gallery-item-lg', 'gallery') }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="350">
+            {{ image_portfolio_init('20', 'gallery-item-lg', 'gallery') }}
+        </div>
     </div>
 
     <div class="mt-160"></div>

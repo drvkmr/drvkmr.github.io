@@ -158,31 +158,87 @@
             "title": "Tardigrade",
             "category": ["internet of things", "architecture", "#"],
             "image": {
-                "lg": "assets/images/projects/TAR1.jpg",
-                "md": "assets/images/projects/TAR1.jpg",
+                "lg": "assets/images/projects/Tardigrade/1.jpg",
+                "md": "assets/images/projects/Tardigrade/1.jpg",
                 "01": [
-                    "assets/images/projects/TAR2.jpg",
-                    "assets/images/projects/TAR2.jpg"
+                    "assets/images/projects/Tardigrade/1.jpg",
+                    "assets/images/projects/Tardigrade/1.jpg"
                 ],
                 "02": [
-                    "assets/images/projects/TAR3.jpg",
-                    "assets/images/projects/TAR3.jpg"
+                    "assets/images/projects/Tardigrade/2.jpg",
+                    "assets/images/projects/Tardigrade/2.jpg"
                 ],
                 "03": [
-                    "assets/images/projects/TAR4.jpg",
-                    "assets/images/projects/TAR4.jpg"
+                    "assets/images/projects/Tardigrade/3.jpg",
+                    "assets/images/projects/Tardigrade/3.jpg"
                 ],
                 "04": [
-                    "assets/images/projects/TAR5.jpg",
-                    "assets/images/projects/TAR5.jpg"
+                    "assets/images/projects/Tardigrade/4.jpg",
+                    "assets/images/projects/Tardigrade/4.jpg"
                 ],
                 "05": [
-                    "assets/images/projects/TAR6.jpg",
-                    "assets/images/projects/TAR6.jpg"
+                    "assets/images/projects/Tardigrade/5.jpg",
+                    "assets/images/projects/Tardigrade/5.jpg"
                 ],
                 "06": [
-                    "assets/images/projects/TAR7.jpeg",
-                    "assets/images/projects/TAR7.jpeg"
+                    "assets/images/projects/Tardigrade/6.gif",
+                    "assets/images/projects/Tardigrade/6.gif"
+                ],
+                "07": [
+                    "assets/images/projects/Tardigrade/7.jpg",
+                    "assets/images/projects/Tardigrade/7.jpg"
+                ],
+                "08": [
+                    "assets/images/projects/Tardigrade/8.jpg",
+                    "assets/images/projects/Tardigrade/8.jpg"
+                ],
+                "09": [
+                    "assets/images/projects/Tardigrade/9.gif",
+                    "assets/images/projects/Tardigrade/9.gif"
+                ],
+                "10": [
+                    "assets/images/projects/Tardigrade/10.jpg",
+                    "assets/images/projects/Tardigrade/10.jpg"
+                ],
+                "11": [
+                    "assets/images/projects/Tardigrade/11.jpg",
+                    "assets/images/projects/Tardigrade/11.jpg"
+                ],
+                "12": [
+                    "assets/images/projects/Tardigrade/12.jpg",
+                    "assets/images/projects/Tardigrade/12.jpg"
+                ],
+                "13": [
+                    "assets/images/projects/Tardigrade/13.jpg",
+                    "assets/images/projects/Tardigrade/13.jpg"
+                ],
+                "14": [
+                    "assets/images/projects/Tardigrade/14.jpg",
+                    "assets/images/projects/Tardigrade/14.jpg"
+                ],
+                "15": [
+                    "assets/images/projects/Tardigrade/15.jpg",
+                    "assets/images/projects/Tardigrade/15.jpg"
+                ],
+                "16": [
+                    "assets/images/projects/Tardigrade/16.jpg",
+                    "assets/images/projects/Tardigrade/16.jpg"
+                ],
+                "17": [
+                    "assets/images/projects/Tardigrade/17.jpg",
+                    "assets/images/projects/Tardigrade/17.jpg"
+                ],
+                "18": [
+                    "assets/images/projects/Tardigrade/18.jpg",
+                    "assets/images/projects/Tardigrade/18.jpg"
+                ],
+                "19": [
+                    "assets/images/projects/Tardigrade/19.jpg",
+                    "assets/images/projects/Tardigrade/19.jpg"
+                ],
+                "20": [
+                    "assets/images/projects/Tardigrade/20.jpg",
+                    "assets/images/projects/Tardigrade/20.jpg"
                 ]
             }
         },
@@ -192,27 +248,7 @@
             "category": ["architecture", "installation", "#"],
             "image": {
                 "lg": "assets/images/projects/SCD1.jpeg",
-                "md": "assets/images/projects/SCD1.jpeg",
-                "01": [
-                    "assets/images/projects/TAR2.jpg",
-                    "assets/images/projects/TAR2.jpg"
-                ],
-                "02": [
-                    "assets/images/projects/TAR3.jpg",
-                    "assets/images/projects/TAR3.jpg"
-                ],
-                "03": [
-                    "assets/images/projects/TAR4.jpeg",
-                    "assets/images/projects/TAR4.jpeg"
-                ],
-                "04": [
-                    "assets/images/projects/TAR5_s.jpg",
-                    "assets/images/projects/TAR5.jpg"
-                ],
-                "05": [
-                    "assets/images/projects/TAR6.jpg",
-                    "assets/images/projects/TAR6.jpg"
-                ]
+                "md": "assets/images/projects/SCD1.jpeg"
             }
         },
         "the_centre": {
