@@ -1,0 +1,153 @@
+{% set page_title = 'Robotic Ecologies' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set footer = 'default-3' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+    <img src="{{ src[0] }}" alt="">
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio.robotic_ecologies.image[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+{% block content %}
+<div class="container">
+    <!-- Introduction -->
+    <div class="py-160 my-n10">
+        <div class="row gh-1 gv-5 justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left">
+                <div class="subtitle">Robotics Research</div>
+                <h1 class="h3 mb-60">Robotic Ecologies</h1>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="200">
+                <p class="lead mb-30 fw-normal">An exploration of autonomous systems and their interaction with urban environments. Through three distinct robotic prototypes, this research investigates different approaches to machine intelligence, learning, and environmental adaptation.</p>
+                <p class="mb-40">Each robot represents a different philosophy: environmental sensing and response, minimal computational systems, and adaptive learning from human behavior patterns.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quackbot Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-40 text-center show-on-scroll" data-show-duration="500" data-show-distance="20">Quackbot</h2>
+            
+            <div class="row justify-content-center mb-50">
+                <div class="col-12 col-lg-8 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div class="position-relative rounded overflow-hidden">
+                        <a href="{{ portfolio.robotic_ecologies.image.quackbot[1] }}" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade" style="display: block;">
+                            <img src="{{ portfolio.robotic_ecologies.image.quackbot[0] }}" alt="" class="w-100" style="height: auto; max-height: 400px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30 text-center lead">Quackbot is an autonomous swimming robot designed to enhance urban safety along the Lee River. Equipped with obstacle detection and light-sensing capabilities, it navigates waterways to identify dark areas and illuminate them for pedestrian and cyclist safety.</p>
+                    <p class="mb-40 text-center">The robot combines environmental sensing with proactive intervention, representing an approach to urban robotics where machines actively improve public spaces through autonomous decision-making.</p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20 text-center">Key Learnings:</h5>
+                        <ul class="mb-0" style="max-width: 800px; margin: 0 auto;">
+                            <li class="mb-10">Hardware validation in controlled laboratory environments is insufficient for real-world deployment</li>
+                            <li class="mb-10">Assumptions about water dynamics and robot buoyancy proved naive without proper testing protocols</li>
+                            <li>The gap between theoretical design and practical implementation highlighted the importance of iterative prototyping in aquatic environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dumb Spider Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-40 text-center show-on-scroll" data-show-duration="500" data-show-distance="20">Dumb Spider</h2>
+            
+            <div class="row justify-content-center mb-50">
+                <div class="col-12 col-lg-8 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="rounded overflow-hidden">
+                        <iframe src="https://player.vimeo.com/video/270954634?h=a289c87a8c&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30 text-center lead">The Dumb Spider explores minimal computation through storage-based programming. Operating without sensors or traditional intelligence, this robot relies entirely on pre-programmed movement patterns and mechanical responses.</p>
+                    <p class="mb-40 text-center">Despite developing custom software to assist with programming, the project revealed the limitations of purely deterministic robotic behavior and the challenges of creating meaningful interactions without environmental feedback.</p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20 text-center">Key Learnings:</h5>
+                        <ul class="mb-0" style="max-width: 800px; margin: 0 auto;">
+                            <li class="mb-10">Deterministic programming without environmental sensing severely limits robotic adaptability</li>
+                            <li class="mb-10">Even sophisticated programming interfaces cannot compensate for lack of real-time feedback systems</li>
+                            <li>The absence of sensors makes robots predictable but ultimately inflexible in dynamic environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Susan Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-40 text-center show-on-scroll" data-show-duration="500" data-show-distance="20">Smart Susan</h2>
+            
+            <div class="row justify-content-center mb-50">
+                <div class="col-12 col-lg-8 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="rounded overflow-hidden">
+                        <iframe src="https://player.vimeo.com/video/261883120?h=7621f605c4&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30 text-center lead">Smart Susan demonstrates passive learning through observation of human behavior patterns. This intelligent device monitors user interactions and gradually adapts its responses to anticipate needs, creating an increasingly seamless integration with daily routines.</p>
+                    <p class="mb-30 text-center">The concept extends beyond individual learning to collective intelligence—multiple devices sharing behavioral data to create sophisticated prediction networks. For example, retrieving a towel could trigger automatic activation of bathroom lighting and water heating systems.</p>
+                    <p class="mb-40 text-center">This approach represents a shift from reactive to predictive home automation, where environmental intelligence emerges from accumulated behavioral understanding.</p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20 text-center">Key Learnings:</h5>
+                        <ul class="mb-0" style="max-width: 800px; margin: 0 auto;">
+                            <li class="mb-10">Human behavioral patterns exhibit sufficient consistency for machine prediction, but individual variations require extensive data collection</li>
+                            <li class="mb-10">Multi-user environments significantly complicate pattern recognition, especially in shared spaces with conflicting preferences</li>
+                            <li>Determining data relevance across networked devices requires sophisticated filtering algorithms, making deep learning approaches essential for scalable deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="py-60 border-top">
+        <div class="row gh-2 gv-3 justify-content-center">
+            <div class="col-auto col-sm-6">
+                <ul class="list-group list-group-gap borderless">
+                    <li class="list-group-item"><span class="fw-medium me-8">Date:</span> 2017-2018</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Category:</span> Robotics, IoT, Machine Learning</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Focus:</span> Autonomous Systems, Environmental Interaction</li>
+                </ul>
+            </div>
+            <div class="col-auto col-sm-6">
+                <ul class="list-group list-group-gap borderless">
+                    <li class="list-group-item"><span class="fw-medium me-8">Institution:</span> University College London</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Research Areas:</span> Urban Robotics, Behavioral Learning</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Applications:</span> Smart Cities, Home Automation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+{% endblock %} 

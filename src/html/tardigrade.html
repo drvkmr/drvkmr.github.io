@@ -7,7 +7,6 @@
 
 {% extends 'layouts/layout-1.html' %}
 
-
 {% macro image_portfolio(src="", classes="", gallery="") %}
 <a href="{{ src[1] }}" class="gallery-item text-white{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
     <img src="{{ src[0] }}" alt="">
@@ -29,27 +28,37 @@
 
 {% block content %}
 <div class="container mt-n10">
+    <!-- Title Section -->
     <div class="pt-60 pb-130 mt-30 mb-n10 text-center">
         <h1 class="mb-n7 show-on-scroll" data-show-duration="700" data-show-distance="10">Tardigrade</h1>
+        <p class="h5 text-muted mt-4 show-on-scroll" data-show-duration="700" data-show-delay="200">A Unique Floating Home</p>
     </div>
 
+    <!-- Hero Carousel with Landscape Images -->
     <div class="swiper mb-160 show-on-scroll" data-swiper-slides="1" data-swiper-speed="600" data-swiper-loop="true" data-swiper-parallax="true" data-show-duration="700" data-show-delay="200">
         <div class="swiper-container">
             <div class="swiper-wrapper">
+                
                 <div class="swiper-slide d-flex align-items-center justify-content-center">
-                    {{ image_portfolio_init('02', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                    {{ image_portfolio_init('inside_landscape1', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center">
-                    {{ image_portfolio_init('10', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                    {{ image_portfolio_init('inside_landscape3', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center">
-                    {{ image_portfolio_init('07', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                    {{ image_portfolio_init('inside_landscape4', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center">
-                    {{ image_portfolio_init('03', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                    {{ image_portfolio_init('outside_landscape1', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center">
-                    {{ image_portfolio_init('12', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                    {{ image_portfolio_init('outside_landscape2', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                </div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('outside_landscape3', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
+                </div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    {{ image_portfolio_init('inside_landscape8', 'gallery-item-md w-100 h-auto', 'gallery-slider') }}
                 </div>
             </div>
         </div>
@@ -61,60 +70,210 @@
         </div>
     </div>
 
-    <div class="row gv-3 justify-content-center mb-130">
-        <div class="col-12 col-lg-7 text-center">
-            <h2 class="h3 mb-30 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
-            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Tardigrade is a continuos cruiser narrowboat living in London canals. She was built in 1980 and is being renovated by us since 2021.</p>
-            <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Full interior and electrical refurbishment to make it more beautiful, livable and smart. Lots of small little sensors, custom made lighting setup, everything connected !</p>
+    <!-- About Project Section -->
+    <div class="row gv-3 justify-content-center mb-160">
+        <div class="col-12 col-lg-8 text-center">
+            <h2 class="h3 mb-30 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">About Tardigrade</h2>
+            <p class="mb-4 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Tardigrade is a truly unique, characterful floating home that has been completely renovated from the hull up with a designer's eye and a technologist's brain. She's a continuous cruiser narrowboat living in London canals, built in 1980 and being renovated by us since 2021.</p>
+            <p class="mb-4 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">The result is a bright, airy, and flexible living space unlike any other. As an architect and a creative technologist, we designed the open-plan interior to be completely modular. Furniture folds away to create a huge, uninterrupted space perfect for hosting friends, yoga, or just enjoying a minimalist lifestyle.</p>
+            <p class="mb-4 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="250">The custom LED lighting, designed to trace the elegant form of the boat, creates a warm and architectural glow throughout the living space.</p>
+            <p class="pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <a href="https://tardigradeboat.github.io/" target="_blank" class="btn btn-dark btn-sm">Visit Tardigrade Website</a>
+                <small class="d-block mt-2 text-muted">Explore more photos, details, and the full story</small>
+            </p>
         </div>
         <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
             <hr class="mt-0 mb-30">
             <div class="row justify-content-around gh-1">
                 <div class="col-auto mb-8">
-                    <span class="fw-medium me-8">Team:</span> Nina Pestel and Dhruv Kumar.
+                    <span class="fw-medium me-8">Team:</span> Nina Pestel and Dhruv Kumar
+                </div>
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Year:</span> 2021 - Present
+                </div>
+                <div class="col-auto mb-8">
+                    <span class="fw-medium me-8">Location:</span> London Canals, UK
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"  src="https://www.youtube.com/embed/E4eAK_rn3kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- YouTube Video Section -->
+    <div class="mb-160 show-on-scroll" data-show-duration="500" data-show-distance="10">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"  src="https://www.youtube.com/embed/acXKokLhvRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-    <p>A cruise from Paddington to King's Cross in London</p>
 
-    <div class="row gh-1 gv-1">
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10">
-            {{ image_portfolio_init('05', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">Custom lighting controller</p>
+    <!-- Smart Features Section -->
+    <div class="mb-160">
+        <div class="row gv-3 justify-content-center mb-60">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="h3 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="10">Smart Boat Technology</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Tardigrade isn't just beautiful; it's intelligent. We engineered a custom 'smart' system that gives complete control of off-grid life with real-time monitoring and control capabilities.</p>
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">
-            {{ image_portfolio_init('06', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">Sliders to control lights depending on battery and mood.</p>
+        
+        <div class="row gh-4 gv-4 mb-60 justify-content-center">
+            <div class="col-12 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                <div class="position-relative overflow-hidden" style="aspect-ratio: 9/16; width: 100%;">
+                    {{ image_portfolio_init('switch', 'gallery-item position-absolute top-0 start-0 w-100 h-100 object-fit-cover', 'smart-features') }}
+                </div>
+                <p class="text-center mt-3"><strong>Smart Lighting Control</strong><br>Custom controller with sliders for mood-based lighting depending on battery levels</p>
+            </div>
+            <div class="col-12 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                <div class="position-relative overflow-hidden" style="aspect-ratio: 9/16; width: 100%;">
+                    {{ image_portfolio_init('vrm1', 'gallery-item position-absolute top-0 start-0 w-100 h-100 object-fit-cover', 'smart-features') }}
+                </div>
+                <p class="text-center mt-3"><strong>Battery & Solar Monitoring</strong><br>Real-time battery bank and solar charging status dashboard</p>
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
-            {{ image_portfolio_init('09', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">Pee Alarm :)</p>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
+                <div class="position-relative overflow-hidden" style="aspect-ratio: 16/9; width: 100%;">
+                    {{ image_portfolio_init('livegrid', 'gallery-item position-absolute top-0 start-0 w-100 h-100 object-fit-cover', 'smart-features') }}
+                </div>
+                <p class="text-center mt-3"><strong>LiveGrid Integration</strong><br>Advanced energy management system connecting all boat systems</p>
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-            {{ image_portfolio_init('04', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">Unique Tunnel Lighting Setup</p>
+    </div>
+
+    <!-- Renovation Progress Section -->
+    <div class="mb-160">
+        <div class="row gv-3 justify-content-center mb-60">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="h3 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="10">Renovation Journey</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Complete interior and electrical refurbishment to make it more beautiful, liveable and smart. A journey from empty hull to a sophisticated floating home.</p>
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-            {{ image_portfolio_init('16', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">Tiling is so hard</p>
+        
+        <div class="swiper renovation-carousel show-on-scroll" data-swiper-slides="1" data-swiper-speed="600" data-swiper-loop="true" data-show-duration="700" data-show-delay="200">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression1', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">How It Started</h3>
+                                <p class="mb-0">Looked ok but there was no insulation. The boat appeared decent from the outside, but underneath the surface was a different story. Built in 1980, Tardigrade had the bones of a good narrowboat but lacked the modern systems and insulation needed for comfortable living. This was the beginning of our vision to transform her into a smart, efficient floating home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression2', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">Demolition</h3>
+                                <p class="mb-0">Removing old walls, floor, everything basically. This was the most dramatic phase - stripping away decades of previous modifications and additions to reveal the true structure of the boat. Every surface was carefully assessed and removed where necessary, creating a blank canvas for our architectural vision while preserving the essential character of the narrowboat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression3', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">Sanding and Cleaning</h3>
+                                <p class="mb-0">So much rust was sanded off. This painstaking process involved treating every inch of the steel hull and internal framework. Decades of oxidation were carefully removed, revealing the solid foundation beneath. This crucial preparation work ensured that all subsequent installations would have a clean, stable base to build upon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression4', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">Spray Foam</h3>
+                                <p class="mb-0">Professional spray foam insulation was installed. This modern insulation system transformed the boat's thermal performance, creating an efficient barrier against the elements. The spray foam application ensured complete coverage in all the curved and irregular spaces typical of narrowboat construction, eliminating thermal bridges and creating a foundation for year-round comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression5', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">Putting It All Back Together</h3>
+                                <p class="mb-0">We moved in and still had a lot to do. This phase represented both excitement and challenge - living aboard while continuing the construction process. Installing the custom electrical systems, smart technology, and modular interior elements while maintaining our daily life on the water. Every day brought new progress toward our vision of a truly smart floating home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center gh-4 gv-4">
+                            <div class="col-12 col-lg-6">
+                                <div style="height: 500px; width: 100%; position: relative;">
+                                    {{ image_portfolio_init('progression6', 'gallery-item w-100 h-100 object-fit-cover', 'progression') }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4 mb-3">All Done!</h3>
+                                <p class="mb-0">Took 2 years, but we finally finished. The transformation was complete - from a tired old narrowboat to a sophisticated smart floating home. Every system carefully planned and executed, from the custom LED lighting that traces the boat's elegant form to the advanced monitoring systems that provide complete control over off-grid living. Tardigrade had become everything we envisioned and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev bg-white">
+                {{- icon.arrow_left | safe -}}
+            </div>
+            <div class="swiper-button-next bg-white">
+                {{- icon.arrow_right | safe -}}
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-            {{ image_portfolio_init('15', 'gallery-item-lg', 'gallery') }}
-            <p class="text-center mt-2">It was a lot of work !</p>
+    </div>
+
+    <!-- Additional Images Gallery -->
+    <div class="mb-160">
+        <div class="row gv-3 justify-content-center mb-60">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="h3 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="10">Life Aboard</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">A glimpse into the daily life and unique features of this floating home.</p>
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-            {{ image_portfolio_init('11', 'gallery-item-lg', 'gallery') }}
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="250">
-            {{ image_portfolio_init('17', 'gallery-item-lg', 'gallery') }}
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="350">
-            {{ image_portfolio_init('20', 'gallery-item-lg', 'gallery') }}
+
+        <div class="row gh-1 gv-1">
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10">
+                {{ image_portfolio_init('inside_portrait1', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">Unique and bright aesthetics</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
+                {{ image_portfolio_init('inside_portrait3', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">Open plan interior design</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
+                {{ image_portfolio_init('inside_portrait4', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">Flexible Layouts</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                {{ image_portfolio_init('inside_portrait5', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">Warm and cosy</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="400">
+                {{ image_portfolio_init('bath1', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">A delightful bathroom</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="500">
+                {{ image_portfolio_init('outside_portrait2', 'gallery-item-lg', 'gallery') }}
+                <p class="text-center mt-2">Eye catching exterior</p>
+            </div>
         </div>
     </div>
 

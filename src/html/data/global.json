@@ -34,6 +34,12 @@
                 "tardigrade.html": {
                     "name": "Tardigrade"
                 },
+                "generative_design.html": {
+                    "name": "Generative Design for Soft Robotics"
+                },
+                "robotic_ecologies.html": {
+                    "name": "Robotic Ecologies"
+                },
                 "latent_facade.html": {
                     "name": "Latent Facade"
                 },
@@ -111,7 +117,7 @@
         "rapid_kinetic": {
             "href": "rapid_kinetic.html",
             "title": "Rapid Kinetic Toolkit",
-            "category": ["Product", "#"],
+            "category": ["product", "robotics", "#"],
             "image": {
                 "lg": "assets/images/projects/RAK1.jpg",
                 "md": "assets/images/projects/RAK1.jpg",
@@ -153,92 +159,138 @@
                 ]
             }
         },
+        "generative_design": {
+            "href": "generative_design.html",
+            "title": "Generative Design for Soft Robotics",
+            "category": ["machinelearning", "#"],
+            "image": {
+                "lg": "assets/images/projects/GA/cover.png",
+                "md": "assets/images/projects/GA/cover.png",
+                "cover": [
+                    "assets/images/projects/GA/cubeWalker.gif",
+                    "assets/images/projects/GA/cubeWalker.gif"
+                ]
+            }
+        },
+        "robotic_ecologies": {
+            "href": "robotic_ecologies.html",
+            "title": "Robotic Ecologies",
+            "category": ["robotics", "machinelearning", "#"],
+            "image": {
+                "lg": "assets/images/projects/Robots/cover.png",
+                "md": "assets/images/projects/Robots/cover.png",
+                "quackbot": [
+                    "assets/images/projects/Robots/quackbot.jpg",
+                    "assets/images/projects/Robots/quackbot.jpg"
+                ]
+            }
+        },
         "tardigrade": {
             "href": "tardigrade.html",
             "title": "Tardigrade",
             "category": ["internet of things", "architecture", "#"],
             "image": {
-                "lg": "assets/images/projects/Tardigrade/1.jpg",
-                "md": "assets/images/projects/Tardigrade/1.jpg",
-                "01": [
-                    "assets/images/projects/Tardigrade/1.jpg",
-                    "assets/images/projects/Tardigrade/1.jpg"
+                "lg": "assets/images/projects/Tardigrade/inside_landscape1.jpg",
+                "md": "assets/images/projects/Tardigrade/inside_landscape1.jpg",
+                "outside_landscape1": [
+                    "assets/images/projects/Tardigrade/outside_landscape1.jpg",
+                    "assets/images/projects/Tardigrade/outside_landscape1.jpg"
                 ],
-                "02": [
-                    "assets/images/projects/Tardigrade/2.jpg",
-                    "assets/images/projects/Tardigrade/2.jpg"
+                "outside_landscape2": [
+                    "assets/images/projects/Tardigrade/outside_landscape2.jpg",
+                    "assets/images/projects/Tardigrade/outside_landscape2.jpg"
                 ],
-                "03": [
-                    "assets/images/projects/Tardigrade/3.jpg",
-                    "assets/images/projects/Tardigrade/3.jpg"
+                "outside_landscape3": [
+                    "assets/images/projects/Tardigrade/outside_landscape3.jpg",
+                    "assets/images/projects/Tardigrade/outside_landscape3.jpg"
                 ],
-                "04": [
-                    "assets/images/projects/Tardigrade/4.jpg",
-                    "assets/images/projects/Tardigrade/4.jpg"
+                "inside_landscape1": [
+                    "assets/images/projects/Tardigrade/inside_landscape1.jpg",
+                    "assets/images/projects/Tardigrade/inside_landscape1.jpg"
                 ],
-                "05": [
-                    "assets/images/projects/Tardigrade/5.jpg",
-                    "assets/images/projects/Tardigrade/5.jpg"
+                "inside_landscape3": [
+                    "assets/images/projects/Tardigrade/inside_landscape3.jpg",
+                    "assets/images/projects/Tardigrade/inside_landscape3.jpg"
                 ],
-                "06": [
-                    "assets/images/projects/Tardigrade/6.gif",
-                    "assets/images/projects/Tardigrade/6.gif"
+                "inside_landscape4": [
+                    "assets/images/projects/Tardigrade/inside_landscape4.jpg",
+                    "assets/images/projects/Tardigrade/inside_landscape4.jpg"
                 ],
-                "07": [
-                    "assets/images/projects/Tardigrade/7.jpg",
-                    "assets/images/projects/Tardigrade/7.jpg"
+                "inside_landscape8": [
+                    "assets/images/projects/Tardigrade/inside_landscape8.jpg",
+                    "assets/images/projects/Tardigrade/inside_landscape8.jpg"
                 ],
-                "08": [
-                    "assets/images/projects/Tardigrade/8.jpg",
-                    "assets/images/projects/Tardigrade/8.jpg"
+                "switch": [
+                    "assets/images/projects/Tardigrade/switch.gif",
+                    "assets/images/projects/Tardigrade/switch.gif"
                 ],
-                "09": [
-                    "assets/images/projects/Tardigrade/9.gif",
-                    "assets/images/projects/Tardigrade/9.gif"
+                "vrm1": [
+                    "assets/images/projects/Tardigrade/vrm1.jpg",
+                    "assets/images/projects/Tardigrade/vrm1.jpg"
                 ],
-                "10": [
-                    "assets/images/projects/Tardigrade/10.jpg",
-                    "assets/images/projects/Tardigrade/10.jpg"
+                "vrm2": [
+                    "assets/images/projects/Tardigrade/vrm2.jpg",
+                    "assets/images/projects/Tardigrade/vrm2.jpg"
                 ],
-                "11": [
-                    "assets/images/projects/Tardigrade/11.jpg",
-                    "assets/images/projects/Tardigrade/11.jpg"
+                "livegrid": [
+                    "assets/images/projects/Tardigrade/livegrid.gif",
+                    "assets/images/projects/Tardigrade/livegrid.gif"
                 ],
-                "12": [
-                    "assets/images/projects/Tardigrade/12.jpg",
-                    "assets/images/projects/Tardigrade/12.jpg"
+                "progression1": [
+                    "assets/images/projects/Tardigrade/progression1.jpg",
+                    "assets/images/projects/Tardigrade/progression1.jpg"
                 ],
-                "13": [
-                    "assets/images/projects/Tardigrade/13.jpg",
-                    "assets/images/projects/Tardigrade/13.jpg"
+                "progression2": [
+                    "assets/images/projects/Tardigrade/progression2.jpg",
+                    "assets/images/projects/Tardigrade/progression2.jpg"
                 ],
-                "14": [
-                    "assets/images/projects/Tardigrade/14.jpg",
-                    "assets/images/projects/Tardigrade/14.jpg"
+                "progression3": [
+                    "assets/images/projects/Tardigrade/progression3.jpg",
+                    "assets/images/projects/Tardigrade/progression3.jpg"
                 ],
-                "15": [
-                    "assets/images/projects/Tardigrade/15.jpg",
-                    "assets/images/projects/Tardigrade/15.jpg"
+                "progression4": [
+                    "assets/images/projects/Tardigrade/progression4.jpg",
+                    "assets/images/projects/Tardigrade/progression4.jpg"
                 ],
-                "16": [
-                    "assets/images/projects/Tardigrade/16.jpg",
-                    "assets/images/projects/Tardigrade/16.jpg"
+                "progression5": [
+                    "assets/images/projects/Tardigrade/progression5.jpg",
+                    "assets/images/projects/Tardigrade/progression5.jpg"
                 ],
-                "17": [
-                    "assets/images/projects/Tardigrade/17.jpg",
-                    "assets/images/projects/Tardigrade/17.jpg"
+                "progression6": [
+                    "assets/images/projects/Tardigrade/progression6.jpg",
+                    "assets/images/projects/Tardigrade/progression6.jpg"
                 ],
-                "18": [
-                    "assets/images/projects/Tardigrade/18.jpg",
-                    "assets/images/projects/Tardigrade/18.jpg"
+                "inside_portrait1": [
+                    "assets/images/projects/Tardigrade/inside_portrait1.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait1.jpg"
                 ],
-                "19": [
-                    "assets/images/projects/Tardigrade/19.jpg",
-                    "assets/images/projects/Tardigrade/19.jpg"
+                "inside_portrait3": [
+                    "assets/images/projects/Tardigrade/inside_portrait3.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait3.jpg"
                 ],
-                "20": [
-                    "assets/images/projects/Tardigrade/20.jpg",
-                    "assets/images/projects/Tardigrade/20.jpg"
+                "inside_portrait4": [
+                    "assets/images/projects/Tardigrade/inside_portrait4.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait4.jpg"
+                ],
+                "inside_portrait5": [
+                    "assets/images/projects/Tardigrade/inside_portrait5.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait5.jpg"
+                ],
+                "inside_portrait7": [
+                    "assets/images/projects/Tardigrade/inside_portrait7.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait7.jpg"
+                ],
+                "inside_portrait8": [
+                    "assets/images/projects/Tardigrade/inside_portrait8.jpg",
+                    "assets/images/projects/Tardigrade/inside_portrait8.jpg"
+                ],
+                "outside_portrait2": [
+                    "assets/images/projects/Tardigrade/outside_portrait2.jpg",
+                    "assets/images/projects/Tardigrade/outside_portrait2.jpg"
+                ],
+                "bath1": [
+                    "assets/images/projects/Tardigrade/bath1.jpg",
+                    "assets/images/projects/Tardigrade/bath1.jpg"
                 ]
             }
         },
@@ -324,7 +376,7 @@
         "solar_ecologies": {
             "href": "solar_ecologies.html",
             "title": "Solar Ecologies",
-            "category": ["installation", "#"],
+            "category": ["robotics", "#"],
             "image": {
                 "lg": "assets/images/projects/SEC1.jpg",
                 "md": "assets/images/projects/SEC1.jpg",

@@ -1,0 +1,161 @@
+{% set page_title = 'Generative Design for Soft Robotics' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set footer = 'default-3' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+    <img src="{{ src[0] }}" alt="">
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio.generative_design.image[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+{% block content %}
+<div class="container">
+    <!-- Introduction -->
+    <div class="py-160 my-n10">
+        <div class="row gh-1 gv-5 justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="left">
+                <div class="subtitle">Generative Design</div>
+                <h1 class="h3 mb-60">Generative Design for Soft Robotics</h1>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-origin="right" data-show-delay="200">
+                <p class="lead mb-30 fw-normal">This project is an exploration into the potential of machine learning algorithms for automated design of soft robotics systems. Through investigating genetic algorithms, reinforcement learning, and interactive design interfaces, we developed a comprehensive approach to optimizing kinetic geometries.</p>
+                <p class="mb-40">The research progresses from basic algorithmic exploration to a sophisticated system combining hardware and software for evolving designs based on both computational logic and human preference.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Genetic Algorithms Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="20">Genetic Algorithms</h2>
+            
+            <div class="row gv-5">
+                <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="rounded overflow-hidden">
+                        <iframe src="https://player.vimeo.com/video/266305106?h=a289c87a8c&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 ps-lg-40 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30">A genetic algorithm is a search heuristic that is inspired by Charles Darwin's theory of natural evolution. This algorithm reflects the process of natural selection where the fittest individuals are selected for reproduction in order to produce offspring of the next generation.</p>
+                    <p class="mb-40"><a href="https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3" target="_blank" class="text-decoration-underline">Learn more about Genetic Algorithms</a></p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20">Key Learnings:</h5>
+                        <ul class="mb-0">
+                            <li class="mb-10">Takes a large number of attempts from multiple agents to get optimised</li>
+                            <li class="mb-10">Does not track what the fittest agent did right</li>
+                            <li>Unable to adapt well to changing conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cartpole Agent Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="20">Cartpole Agent</h2>
+            <div class="row gv-5">
+                <div class="col-12 col-lg-6 pe-lg-40 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="rounded overflow-hidden">
+                        <iframe src="https://player.vimeo.com/video/256746912?h=0ef24b94a3&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-40">Cartpole problem is one of the most common testbeds for machine reinforcement learning algorithms. In this particular demonstration, the agent uses random and noise methods to optimise its behaviour.</p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20">Key Learnings:</h5>
+                        <ul class="mb-0">
+                            <li>Even in its most trivial form, reinforcement learning has potential</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maze Seeking Agent Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="20">Maze Seeking Agent</h2>
+            
+            <div class="row gv-5">
+                <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="rounded overflow-hidden">
+                        <iframe src="https://player.vimeo.com/video/255505282?h=7621f605c4&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 ps-lg-40 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30">The agent's purpose here is to reach the target located in the center of the gridworld. It uses a Q-learning algorithm to do so.</p>
+                    <p class="mb-30">It learns from its own past experiences of navigating the maze, and builds up its memory as it goes. Eventually, it gets close to perfect. But it can also adapt itself to new conditions. This is demonstrated by setting up boulders while the agent is still moving.</p>
+                    <p class="mb-40">This study also demonstrates the dilemma of exploration vs exploitation, something which is still an unsolved problem in the discipline of machine learning.</p>
+                    
+                    <div class="bg-light p-30 rounded">
+                        <h5 class="h6 mb-20">Key Learnings:</h5>
+                        <ul class="mb-0">
+                            <li class="mb-10">Resilient to changing conditions, which is good since architectural environments are constantly changing and imperfect</li>
+                            <li>Still lacks an human interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Project Section -->
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12">
+            <h2 class="h4 mb-30 show-on-scroll" data-show-duration="500" data-show-distance="20">Final Project: Magnakit Evolution System</h2>
+            <div class="row gv-5">
+                <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="20">
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://www.youtube.com/embed/BofUrcPQYrE" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="100">
+                    <p class="mb-30">This project is an exploration into the potential of Genetic Algorithms (GA) for automated design of stiff rods and air-muscles based kinetic geometries. It starts with a brief background, which includes the genesis of the research, history and relevant applications of GA.</p>
+                    <p class="mb-30">The hardware components of Magnakit are discussed, along with the simulator's developed in parallel to the hardware, followed by details of a manual design interface which enables quick and fast digital design of geometries.</p>
+                    <p class="mb-30">The development and results of an objective GA are illustrated and discussed, which is a completely automated method of evolving designs based on a logic understood by the computer, i.e. displacement in +x direction after a certain time interval. And finally, the development and results of an interactive GA, which evolves design based on ratings provided by the user through an easy to use interface is described.</p>
+                    <p class="mb-30">After gathering results from the three different methods of design, they are compared and each method's strengths and weaknesses, and their suitable applications are projected. It ends with a discussion about secondary learnings which have come out of this thesis and are worth exploring in the future.</p>
+                    
+                    <div class="mt-40">
+                        <a href="https://www.dropbox.com/s/cidfqnjduzwairz/Thesis%20Final.pdf?dl=0" target="_blank" class="btn btn-dark">Read Full Thesis (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="py-60 border-top">
+        <div class="row gh-2 gv-3 justify-content-center">
+            <div class="col-auto col-sm-6">
+                <ul class="list-group list-group-gap borderless">
+                    <li class="list-group-item"><span class="fw-medium me-8">Date:</span> 2017-2018</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Category:</span> Machine Learning, Soft Robotics</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Technologies:</span> Genetic Algorithms, Q-Learning, Python</li>
+                </ul>
+            </div>
+            <div class="col-auto col-sm-6">
+                <ul class="list-group list-group-gap borderless">
+                    <li class="list-group-item"><span class="fw-medium me-8">Institution:</span> University College London</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Type:</span> Master's Thesis</li>
+                    <li class="list-group-item"><span class="fw-medium me-8">Advisor:</span> Prof. Sean Hanna</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+{% endblock %} 
