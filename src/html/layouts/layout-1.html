@@ -6,7 +6,7 @@
 
 
 {% macro card_project_global(name="", image_size="", classes="", data="") %}
-    {{ card_project(portfolio[name].href, portfolio[name].image[image_size], portfolio[name].title, portfolio[name].category, classes, data=data) }}
+    {{ card_project(portfolio[name].href, portfolio[name].image[image_size], portfolio[name].title, portfolio[name].category, classes, data=data, description=portfolio[name].description) }}
 {% endmacro %}
 
 {% macro card_project_overlay_global(name="", image_size="", title_size="", swiper_parallax="", classes="", style="", bg="") %}

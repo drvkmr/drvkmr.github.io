@@ -1,11 +1,13 @@
-{% macro card_project(href="", image="", title="", category="", classes="", title_size="h4", data="") %}
+{% macro card_project(href="", image="", title="", category="", classes="", title_size="h4", data="", description="") %}
 <a class="card card-portfolio card-default{% if classes %} {{ classes }}{% endif %}" href="{{ href }}"{% if data %} {{ data }}{% endif %}>
     <span class="card-img" data-cursor-style="cursor-circle" data-cursor-text="view">
         <img src="{{ image }}" alt="">
     </span>
-    <span class="card-body">
+    <span class="card-body pt-15">
         <span class="card-title {{ title_size }}">{{ title }}</span>
-        <span class="card-category subtitle">{{ category[0] }}</span>
+        {% if description %}
+        <span class="card-description text-muted mt-10" style="font-size: 0.75rem; line-height: 1.3;">{{ description }}</span>
+        {% endif %}
     </span>
 </a>
 {% endmacro %}

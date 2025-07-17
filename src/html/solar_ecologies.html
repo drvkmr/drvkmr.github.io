@@ -3,7 +3,7 @@
 {% set navbar_fixed = true %}
 {% set navbar_expand = true %}
 {% set navbar_mobile_dark = true %}
-{% set footer = 'default-2' %}
+{% set footer = 'minimal' %}
 
 {% extends 'layouts/layout-1.html' %}
 
@@ -74,6 +74,15 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="mt-160"></div>
+
+    <div class="page-navigation mt-160">
+        <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="index.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="#" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
 </div>
 
 {% macro image_portfolio(src="", classes="", gallery="") %}

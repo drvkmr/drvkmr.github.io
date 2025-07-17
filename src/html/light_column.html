@@ -2,7 +2,7 @@
 {% set navbar_sticky = true %}
 {% set navbar_expand = true %}
 {% set navbar_mobile = 'style-2' %}
-{% set footer = 'default-3' %}
+{% set footer = 'minimal' %}
 
 {% extends 'layouts/layout-1.html' %}
 
@@ -70,8 +70,17 @@
             </div>
         </div>
     </div>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/KtO6XPnGn9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/566020897?h=a4ade2e0ba&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/566020897">Light Column Installation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <div class="page-navigation mt-160">
+        <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="index.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="#" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
+
+    <div class="mt-160"></div>
 </div>
 
 {% endblock %}

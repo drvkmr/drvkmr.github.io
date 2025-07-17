@@ -1,6 +1,6 @@
 {
     "template_name": "themebau",
-    "copyright": "© 2020-2022 | Themebau by RunWebRun.",
+    "copyright": "© 2024 | Dhruv Kumar",
     "navbar": "top",
     "navbar_dark": false,
     "navbar_mobile": "style-2",
@@ -60,6 +60,9 @@
                 },
                 "pree_wallet.html": {
                     "name": "Pree Wallet"
+                },
+                "lux_automata.html": {
+                    "name": "Lux Automata"
                 }
             }
         },
@@ -75,6 +78,7 @@
         "livegrid": {
             "href": "https://livegrid.tech",
             "title": "LiveGrid",
+            "description": "Tamagotchi inspired digital aquarium that responds to indoor environment.",
             "category": ["product", "#"],
             "image": {
                 "lg": "assets/images/projects/Livegrid/4.jpg",
@@ -84,6 +88,7 @@
         "variegation_index": {
             "href": "variegation_index.html",
             "title": "Variegation Index",
+            "description": "Data visualization installation exploring photosynthesis activity in plants.",
             "category": ["installation", "#"],
             "image": {
                 "lg": "assets/images/projects/BLC7.jpeg",
@@ -117,6 +122,7 @@
         "rapid_kinetic": {
             "href": "rapid_kinetic.html",
             "title": "Rapid Kinetic Toolkit",
+            "description": "Open-source toolkit for rapid prototyping of kinetic and robotic systems with modular components.",
             "category": ["product", "robotics", "#"],
             "image": {
                 "lg": "assets/images/projects/RAK1.jpg",
@@ -162,6 +168,7 @@
         "generative_design": {
             "href": "generative_design.html",
             "title": "Generative Design for Soft Robotics",
+            "description": "AI-driven system generating optimized soft robotic forms using evolutionary algorithms.",
             "category": ["machinelearning", "#"],
             "image": {
                 "lg": "assets/images/projects/GA/cover.png",
@@ -175,6 +182,7 @@
         "robotic_ecologies": {
             "href": "robotic_ecologies.html",
             "title": "Robotic Ecologies",
+            "description": "Building robots, intelligent or otherwise.",
             "category": ["robotics", "machinelearning", "#"],
             "image": {
                 "lg": "assets/images/projects/Robots/cover.png",
@@ -188,7 +196,8 @@
         "tardigrade": {
             "href": "tardigrade.html",
             "title": "Tardigrade",
-            "category": ["internet of things", "architecture", "#"],
+            "description": "A renovated 1980s narrowboat transformed into a smart floating home on London canals.",
+            "category": ["architecture", "internet of things", "#"],
             "image": {
                 "lg": "assets/images/projects/Tardigrade/inside_landscape1.jpg",
                 "md": "assets/images/projects/Tardigrade/inside_landscape1.jpg",
@@ -297,7 +306,8 @@
         "latent_facade": {
             "href": "latent_facade.html",
             "title": "Latent Facade",
-            "category": ["architecture", "installation", "#"],
+            "description": "Responsive architectural facade that responds to vehicular movement inside a parking building.",
+            "category": ["installation", "architecture", "#"],
             "image": {
                 "lg": "assets/images/projects/SCD1.jpeg",
                 "md": "assets/images/projects/SCD1.jpeg"
@@ -306,6 +316,7 @@
         "the_centre": {
             "href": "the_centre.html",
             "title": "The Centre",
+            "description": "Immersive media artwork using water, light, and sound to create moments of stillness and reflection.",
             "category": ["installation", "#"],
             "image": {
                 "lg": "assets/images/projects/DFF1.jpeg",
@@ -339,6 +350,7 @@
         "light_column": {
             "href": "light_column.html",
             "title": "Light Column",
+            "description": "Interactive light sculpture that responds to human presence and movement through space.",
             "category": ["installation", "#"],
             "image": {
                 "lg": "assets/images/projects/CLP1.jpg",
@@ -376,6 +388,7 @@
         "solar_ecologies": {
             "href": "solar_ecologies.html",
             "title": "Solar Ecologies",
+            "description": "Autonomous solar-powered robotic systems that mimic natural ecosystem behaviors and interactions.",
             "category": ["robotics", "#"],
             "image": {
                 "lg": "assets/images/projects/SEC1.jpg",
@@ -418,6 +431,7 @@
         "mobile_shelter": {
             "href": "mobile_shelter.html",
             "title": "Mobile Shelter",
+            "description": "Ultra-Portable shelter system which almost hit the market.",
             "category": ["architecture", "product", "#"],
             "image": {
                 "lg": "assets/images/projects/MobileShelter/3.jpg",
@@ -491,6 +505,7 @@
         "pree_wallet": {
             "href": "pree_wallet.html",
             "title": "Pree Wallet",
+            "description": "Smart wallet with IoT connectivity for lighting, modularity and security alerts.",
             "category": ["product", "IoT", "#"],
             "image": {
                 "lg": "assets/images/projects/preewallet/6.jpg",
@@ -518,6 +533,48 @@
                 "06": [
                     "assets/images/projects/preewallet/6.jpg",
                     "assets/images/projects/preewallet/6.jpg"
+                ]
+            }
+        },
+        "lux_automata": {
+            "href": "lux_automata.html",
+            "title": "Lux Automata",
+            "description": "Interactive light installation using machine learning to responds people's movements.",
+            "category": ["installation", "machinelearning", "IoT", "#"],
+            "image": {
+                "lg": "assets/images/projects/LuxAutomata/02.jpg",
+                "md": "assets/images/projects/LuxAutomata/02.jpg",
+                "01": [
+                    "assets/images/projects/LuxAutomata/01.jpg",
+                    "assets/images/projects/LuxAutomata/01.jpg"
+                ],
+                "02": [
+                    "assets/images/projects/LuxAutomata/02.jpg",
+                    "assets/images/projects/LuxAutomata/02.jpg"
+                ],
+                "03": [
+                    "assets/images/projects/LuxAutomata/03.jpg",
+                    "assets/images/projects/LuxAutomata/03.jpg"
+                ],
+                "04": [
+                    "assets/images/projects/LuxAutomata/04.jpg",
+                    "assets/images/projects/LuxAutomata/04.jpg"
+                ],
+                "05": [
+                    "assets/images/projects/LuxAutomata/05.jpg",
+                    "assets/images/projects/LuxAutomata/05.jpg"
+                ],
+                "06": [
+                    "assets/images/projects/LuxAutomata/06.jpg",
+                    "assets/images/projects/LuxAutomata/06.jpg"
+                ],
+                "07": [
+                    "assets/images/projects/LuxAutomata/07.jpg",
+                    "assets/images/projects/LuxAutomata/07.jpg"
+                ],
+                "08": [
+                    "assets/images/projects/LuxAutomata/08.jpg",
+                    "assets/images/projects/LuxAutomata/08.jpg"
                 ]
             }
         }

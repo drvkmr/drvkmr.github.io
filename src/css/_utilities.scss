@@ -55,3 +55,125 @@
 .text-grey-dark {
     color: $color-grey-dark !important; //stylelint-disable-line
 }
+
+
+// Mobile spacing adjustments - reduce excessive vertical spacing on small screens
+@include media-breakpoint-down(md) {
+    // Large padding/margin reductions for mobile
+    .pt-160 { padding-top: 80px !important; }
+    .pb-160 { padding-bottom: 80px !important; }
+    .py-160 { 
+        padding-top: 80px !important; 
+        padding-bottom: 80px !important; 
+    }
+    .mt-160 { margin-top: 80px !important; }
+    .mb-160 { margin-bottom: 80px !important; }
+    .my-160 { 
+        margin-top: 80px !important; 
+        margin-bottom: 80px !important; 
+    }
+
+    .pt-130 { padding-top: 60px !important; }
+    .pb-130 { padding-bottom: 60px !important; }
+    .py-130 { 
+        padding-top: 60px !important; 
+        padding-bottom: 60px !important; 
+    }
+    .mt-130 { margin-top: 60px !important; }
+    .mb-130 { margin-bottom: 60px !important; }
+    .my-130 { 
+        margin-top: 60px !important; 
+        margin-bottom: 60px !important; 
+    }
+
+    .pt-100 { padding-top: 50px !important; }
+    .pb-100 { padding-bottom: 50px !important; }
+    .py-100 { 
+        padding-top: 50px !important; 
+        padding-bottom: 50px !important; 
+    }
+    .mt-100 { margin-top: 50px !important; }
+    .mb-100 { margin-bottom: 50px !important; }
+    .my-100 { 
+        margin-top: 50px !important; 
+        margin-bottom: 50px !important; 
+    }
+
+    .pt-80 { padding-top: 40px !important; }
+    .pb-80 { padding-bottom: 40px !important; }
+    .py-80 { 
+        padding-top: 40px !important; 
+        padding-bottom: 40px !important; 
+    }
+    .mt-80 { margin-top: 40px !important; }
+    .mb-80 { margin-bottom: 40px !important; }
+    .my-80 { 
+        margin-top: 40px !important; 
+        margin-bottom: 40px !important; 
+    }
+
+    .pt-60 { padding-top: 30px !important; }
+    .pb-60 { padding-bottom: 30px !important; }
+    .py-60 { 
+        padding-top: 30px !important; 
+        padding-bottom: 30px !important; 
+    }
+    .mt-60 { margin-top: 30px !important; }
+    .mb-60 { margin-bottom: 30px !important; }
+    .my-60 { 
+        margin-top: 30px !important; 
+        margin-bottom: 30px !important; 
+    }
+}
+
+// Extra small screens - even more aggressive spacing reduction
+@include media-breakpoint-down(sm) {
+    .pt-160 { padding-top: 60px !important; }
+    .pb-160 { padding-bottom: 60px !important; }
+    .py-160 { 
+        padding-top: 60px !important; 
+        padding-bottom: 60px !important; 
+    }
+    .mt-160 { margin-top: 60px !important; }
+    .mb-160 { margin-bottom: 60px !important; }
+    .my-160 { 
+        margin-top: 60px !important; 
+        margin-bottom: 60px !important; 
+    }
+
+    .pt-130 { padding-top: 40px !important; }
+    .pb-130 { padding-bottom: 40px !important; }
+    .py-130 { 
+        padding-top: 40px !important; 
+        padding-bottom: 40px !important; 
+    }
+    .mt-130 { margin-top: 40px !important; }
+    .mb-130 { margin-bottom: 40px !important; }
+    .my-130 { 
+        margin-top: 40px !important; 
+        margin-bottom: 40px !important; 
+    }
+
+    .pt-100 { padding-top: 30px !important; }
+    .pb-100 { padding-bottom: 30px !important; }
+    .py-100 { 
+        padding-top: 30px !important; 
+        padding-bottom: 30px !important; 
+    }
+    .mt-100 { margin-top: 30px !important; }
+    .mb-100 { margin-bottom: 30px !important; }
+    .my-100 { 
+        margin-top: 30px !important; 
+        margin-bottom: 30px !important; 
+    }
+
+    // Fix homepage social icons overlap on mobile
+    .mt-n60 { margin-top: -20px !important; }
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+.mt-10 {
+    margin-top: 10px;
+}

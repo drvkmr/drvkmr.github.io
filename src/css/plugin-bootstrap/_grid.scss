@@ -38,3 +38,28 @@ $gap: (
         padding-left: 40px;
     }
 }
+
+// Mobile gap adjustments - increase spacing between project cards for clarity
+@include media-breakpoint-down(md) {
+    .row.gv-6 { margin-top: -70px; > [class*="col"] { padding-top: 70px; } }
+    .row.gv-4 { margin-top: -40px; > [class*="col"] { padding-top: 40px; } }
+    .row.gv-3 { margin-top: -30px; > [class*="col"] { padding-top: 30px; } }
+    
+    // Keep project grid spacing generous on tablet
+    .isotope-grid.row.gv-5 { 
+        margin-top: -80px; 
+        > [class*="col"] { padding-top: 80px; } 
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .row.gv-6 { margin-top: -50px; > [class*="col"] { padding-top: 50px; } }
+    .row.gv-4 { margin-top: -25px; > [class*="col"] { padding-top: 25px; } }
+    .row.gv-3 { margin-top: -20px; > [class*="col"] { padding-top: 20px; } }
+    
+    // Increase project card spacing on mobile for better separation
+    .isotope-grid.row.gv-5 { 
+        margin-top: -60px; 
+        > [class*="col"] { padding-top: 60px; } 
+    }
+}
